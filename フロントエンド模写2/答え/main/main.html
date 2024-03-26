@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/ress.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>顧客管理システム</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>顧客管理システム</h1>
+      <div class="inner">
+        <p id="account_name">ドライブライン　様</p>
+        <form action="../login.html" method="post">
+          <input type="submit" class="button" value="ログアウト" />
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <form id="main_form" action="">
+      <div id="search_area">
+        <div id="search_toggle" class="active">＋ 検索</div>
+        <div id="search_box" class="hidden">
+          <div id="search_contents">
+            <div class="search-content">
+              <label for="search_customer_name" class="text-align-right">顧客名：</label>
+              <input type="text" name="" id="search_customer_name" class="form-text search-form-text" />
+            </div>
+            <div class="search-content">
+              <label for="free_word" class="text-align-right">フリーワード：</label>
+              <input type="text" name="" id="free_word" class="form-text search-form-text" />
+            </div>
+          </div>
+          <div id="search_button">検索</div>
+        </div>
+      </div>
+      <table id="main_table" class="table">
+        <tr class="text-align-left">
+          <th colspan="2" class="err-msg"></th>
+        </tr>
+        <tr>
+          <th>顧客ID<span>※</span></th>
+          <th>顧客名<span>※</span></th>
+          <th>担当者名<span>※</span></th>
+          <th>住所</th>
+          <th>電話番号<span>※</span></th>
+          <th>FAX番号</th>
+          <th>備考</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="customer_id" id="customer_id" class="form-text" />
+          </td>
+          <td>
+            <input type="text" name="customer_name" id="customer_name" class="form-text" required />
+          </td>
+          <td>
+            <input type="text" name="customer_person" id="customer_person" class="form-text" />
+          </td>
+          <td>
+            <input type="text" name="address" id="address" class="form-text" />
+          </td>
+          <td><input type="text" name="tel" id="tel" class="form-text" /></td>
+          <td><input type="text" name="fax" id="fax" class="form-text" /></td>
+          <td>
+            <textarea name="note" id="note" cols="30" rows="10" class="form-text"></textarea>
+          </td>
+          <td>
+            <div id="add_button" class="add-button" onclick="customerTableAdd()">
+              追加
+            </div>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/ress.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>顧客管理システム</title>
+</head>
+
+<body>
+  <div class="login">
+    <h1>顧客管理システム</h1>
+    <form id="login_form" action="./main/main.html" method="POST">
+      <table id="login_table">
+        <tbody>
+          <tr class="text-align-left">
+            <th></th>
+            <th colspan="2" class="err-msg"></th>
+          </tr>
+          <tr>
+            <th><label for="account">アカウント名</label></th>
+            <td>
+              <input type="text" id="account" class="form-text" required />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="password">パスワード</label></th>
+            <td>
+              <input type="password" id="password" class="form-text" required />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="ログイン" class="button login-button" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <script src="./login.js"></script>
+</body>
+
+</html>
