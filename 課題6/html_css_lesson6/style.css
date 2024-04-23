@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.box{
+  /*boxの横幅400px*/
+  width: 100%;
+ /* 縦幅300px */
+  height: 300px;
+}
+
+.box1{
+  /* box1のカラーを青色 */
+ background-color: blue;
+}
+
+.box2{
+  /* box2のカラーを赤色 */
+  background-color: red;
+ }
+
+ /* 1000pxより小さい時の指定 */
+ @media (min-width:1000px){
+  .box0{
+    /* boxを横並びにする */
+    display: flex;
+  }
+ }
+ 

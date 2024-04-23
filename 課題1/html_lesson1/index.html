@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    例題)h1タグで「見出し1」の文字列を囲ってください。
+-->
+ <h1>見出し1</h1>
+<!-- 
+    Q1.h2タグで「見出し2」の文字列を囲ってください。
+-->
+ <h2>見出し2</h2>
+<!-- 
+    Q2.pタグで「段落1」の文字列を囲ってください。
+-->
+ <p>段落1</p>
+<!-- 
+    Q3.aタグで「リンク」の文字列を囲ってください。href属性には#を設定し、href属性に#を設定するとどのような挙動になるかを調べてください。
+-->
+ <a href="#">リンク</a>
+<!-- 
+    Q4.順番付きリストを作成し、
+    1.sample1
+    2.sample2
+    3.sample3
+    と表示してください。
+-->
+ <ol>
+    <li>sample1</li>
+    <li>sample2</li>
+    <li>sample3</li>
+ </ol>
+<!-- 
+    Q5.下記のような表をtableタグ、trタグ、thタグ、tdタグを使用して作成してください。
+    tableタグの属性にframe="border" rules="all"を指定すると見本のように罫線が引かれますが、通常はこの後学習するCSSで指定する項目になります。
+    今回はあくまでHTMLのみで表示する方法ですので、CSS学習後はCSSで書くようにしてください。
+    ┏━━━━━━━━━━━━━━━━━━┓
+    ┃ 名字 ┃ 名前 ┃ 性別 ┃
+    ┣━━━━━╋━━━━━━╋━━━━━┫
+    ┃ 田中 ┃ 太郎 ┃ 男性 ┃
+    ┣━━━━━╋━━━━━━╋━━━━━┫
+    ┃ 山田 ┃ 花子 ┃ 女性 ┃
+    ┗━━━━━━━━━━━━━━━━━━┛
+-->
+ <table frame="border" rules="all" >
+       <tr>
+        <th>名字</th>
+        <th>名前</th>
+        <th>性別</th>
+    </tr>
+    <tr>
+        <td>田中</td>
+        <td>太郎</td>
+        <td>男性</td>
+    </tr>
+    <tr>
+        <td>山田</td>
+        <td>花子</td>
+        <td>女性</td>
+    </tr>
+ </table>
+</body>
+</html>

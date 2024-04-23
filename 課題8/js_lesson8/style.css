@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+html,body{
+  /* 高さを画面に合わせる*/
+  height: 100vh;
+  /* 文字の大きさを100%とする */
+  font-size: 100%;
+}
+
+div{
+  /* 高さは100% */
+  height: 100%;
+  /* フレックスボックスを使用 */
+  display: flex;
+  /* 上下中央配置 */
+  align-items: center;
+  /* 左右中央配置 */
+  justify-content: center;
+}
+
+#button{
+  /* カラーは青色 */
+  background-color: blue;
+  /* 枠線を消去 */
+  border: none;
+  /* 幅は20% */
+  width: 20%;
+  /* 高さは20% */
+  height: 20%;
+  /* 文字の大きさは1.2rem */
+  font-size: 1.2rem; 
+  /* マウスカーソルを変更 */
+  cursor: pointer;
+}

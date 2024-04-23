@@ -1,0 +1,44 @@
+
+<!--
+    問１ 
+    Layout_sample の「Layout」のような画面を作成して下さい。
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson14_validate</title>
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 背景 -->
+    <main id="main">
+        <!-- 中背景 -->
+        <div id="container">
+            <div id="containerItem">
+                <p>ユーザー名</p>
+                <!-- テキストボックス -->
+                <div id="inputBox">
+                    <input type="text" id="inputText">
+                    <div id="submitButton">
+                        <a href="#" id="submit" onclick="linkClick();">送信</a>
+                    </div>
+                </div>
+                <!-- 画面表示 -->
+                <div id="displayBox">
+                    <p id="displayText"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- js読み込み -->
+    <script src="Validation.js"></script>
+</body>
+</html>

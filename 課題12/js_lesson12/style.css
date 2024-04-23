@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body{
+  /* 高さ100vhとする */
+  height: 100vh;
+}
+
+.container{
+  /* 高さ100%とする */
+  height: 100%;
+  /* フレックスボックスを指定 */
+  display: flex;
+  /* 左右中央配置 */
+  justify-content: center;
+  /* 上下中央配置 */
+  align-items: center;
+}
+
+/* フォーカスを指定 */
+input:focus{
+  /* 枠線は#4169E1,1px,solid */
+  outline:#4169E1 1px solid;
+}
+
+#btn{
+  /* 左の余白5px */
+  margin-left: 5px;
+}

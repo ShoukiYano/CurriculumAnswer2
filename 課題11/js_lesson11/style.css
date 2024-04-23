@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body{
+  /* 高さ100%とする */
+  height: 100%;
+}
+
+.btn, .img{
+  /* フレックスボックスを指定 */
+  display: flex;
+  /* 左右中央配置 */
+  justify-content: center;
+}
+
+.img{
+  /* 上の余白30px */
+  margin-top: 30px;
+}
+
+#btn-fade{
+  /* 横幅15% */
+  width: 15%;
+  /* 高さ50ｐｘ */
+  height: 50px;
+  /* カラーは青色 */
+  background-color: blue;
+  /* 枠線を消去 */
+  border: none;
+   /* 上の余白180px */
+   margin-top: 180px;
+}
+
+.img-fade{
+  /* 横幅20% */
+  width: 20%;
+  /* 高さ自動 */
+  height: auto;
+  /* 表示しない */
+  display: none
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+html,body{
+  /* 余白0とする */
+  margin: 0;
+  /* 文字の大きさを100%とする */
+  font-size: 100%;
+}
+
+#wrap{
+  /* 位置指定プロパティを指定 */
+  position: relative;
+}
+
+#btn{
+  /* カラーは青 */
+  background-color: blue;
+  /* 横幅px */
+  width: 200px;
+  /* 高さpx */
+  height: 120px;
+  /* 枠線を消去 */
+  border: none;
+  /* 文字の大きさは1.2rem */
+  font-size: 1.2rem; 
+  /* マウスカーソルを変更 */
+  cursor: pointer;
+  /* 相対位置指定 */
+  position: absolute;
+}

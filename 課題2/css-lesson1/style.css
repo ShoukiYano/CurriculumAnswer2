@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+h1{
+ /*h1の大きさは60px*/
+  font-size: 60px;
+}
+
+h2{
+  /* h2の色は赤 */
+  color: red;
+}
+
+p{
+  /* pを左右中央に配置 */
+  text-align: center;
+}
+
+a{
+  /* aの下線を消去 */
+  text-decoration: none;
+}
+
+li{
+  /* リストの数字を消去 */
+  list-style: none;
+}
+
+table{
+  /* 表の幅・高さを200px */
+  height: 200px;
+  width: 200px;
+  /* 文字は中央寄せ */
+ text-align: center;
+}
+
+table,th,td{
+  /* 表の全ての罫線を太さ3pxの青の実線 */
+border: 3px solid blue;
+ /* 隣り合うセルの線を結合 */
+border-collapse: collapse;
+}

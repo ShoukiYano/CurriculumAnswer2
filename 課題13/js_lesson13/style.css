@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.wrap{
+  /* 左の余白75px */
+  margin-left: 75px;
+  /* 上の余白75px */
+  margin-top: 75px;
+}
+input#text{
+  /* テキストボックスの幅100px */
+  width: 100px; 
+}
+
+#box{
+  /* ボックスの幅350px */
+  width: 350px;
+  /* ボックスの高さ350px */
+  height: 350px;
+  /* カラーはグレー */
+  background-color: grey;
+}

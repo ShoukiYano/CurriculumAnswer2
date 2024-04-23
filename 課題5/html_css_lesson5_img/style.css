@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+div{
+  /* 画面左右中央に配置 */
+  text-align: center;
+}
+
+img{
+  /* 縦幅500px */
+  height: 500px;
+  /* 横幅1000px */
+  width: 1000px;
+}

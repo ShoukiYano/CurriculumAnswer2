@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.box0{
+ /* カラーを黒色 */
+ background-color: black;
+ /* boxを横並びにする */
+ display: flex;
+ /* 左右中央に等間隔に配置 */
+ justify-content: space-evenly;
+ /* 上下中央に配置 */ 
+ align-items: center;
+ /* box0の高さ480px */
+ height: 480px;
+}
+
+.box{
+ /*boxの横幅400px*/
+ width: 400px;
+ /* 縦幅300px */
+ height: 300px;
+}
+
+.box1{
+ /* box1のカラーを青色 */
+ background-color: blue;
+}
+
+.box2{
+ /* box2のカラーを赤色 */
+ background-color: red;
+ }

@@ -1,0 +1,21 @@
+
+
+#selectBox{
+    width: 200px;
+    height: 20px;
+}
+
+select{
+    width: 70%;
+    height: 100%;
+}
+
+a{
+    width: 30%;
+    height: 100%;
+}
+
+#border{
+    width: 100vw;
+    border-bottom: solid 1px black;
+}
