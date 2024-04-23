@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!--
+    可読性の高いコードが書けるかどうかはエンジニアとして重要なスキルの1つです。
+    class,idや変数や関数の "命名規則" について調べてください。
+    参考サイト：https://qiita.com/YutaManaka/items/62dda256bb7ba6c08399
+    「キャメルスケール」「スネークスケール」は現場でもよく使うものになるので、追加で調べてください。
+
+    課題：添付ファイルのようなWEBサイトを完成させる。
+         ※HTML/jsのコードは「ここに【】記載」と書いている箇所に書くようにしてください。
+    　　　 cssは各要素やclass/idごとに分けて書いてください。
+    フロントエンド模写 以降のカリキュラムでは上記のような命名規則もチェック対象となります。
+    命名に統一性がなかったり、省略しすぎて意味合いがわからないなどがあれば再提出になります。
+    チーム開発においても必須なものになるので、カリキュラムを進めながら身につけましょう！
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXX-Cafe</title>
+    <!-- リセットCSSを読み込む処理を記述 -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- cssファイルを読み込む処理を記述 -->
+    <link rel="stylesheet" href="tutorial.css">
+    <!-- jsのCDNを読み込む処理を記述 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <!-- -- -- -- -- -- --【ヘッダ】-- -- -- -- -- -- -->
+    <!--
+        １）headerタグを記述
+        ２）headerタグの中にh1タグを記述し値に「Cafe」と記述
+        ３）h1タグにつづけてnavタグを記述
+        ４）navタグの中にulタグを記述し、「属性：class 属性値：headerMenu」を記述
+        ５）class headerMenuの中にliタグを4つ記述
+        ６）各liタグの中にaタグを記述、「属性：href 属性値：#」を記述
+        ７）各aタグの値に「News」「Gallery」「Profile」「Contact」を記述
+    -->
+    <!-- -- -- -- -- -- -- ここに [ヘッダ] 記載 -- -- -- -- -- -- -->
+
+    <header>
+        <h1>Cafe</h1>
+        <nav>
+            <ul class="headerMenu">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
+    <!-- -- -- -- -- -- --【News】-- -- -- -- -- -- -->
+    <!--
+        １）divタグを記述し、「属性：class 属性値：wrapper」を記述
+        　　class wrapperの中に sectionタグ divタグ を記述し、
+        ２）sectionタグに「属性：class 属性値：news」、
+        　　divタグに「属性：class 属性値：twoColumn」を記述
+        ３）class newsの中に h2タグ 1つ divタグ 2つ を記述し、
+        　　h2タグの値に「News」、
+        　　上のdivタグに「属性：class 属性値：newsContainer」、
+        　　下のdivタグに「属性：class 属性値：more」を記述
+        ４）class newsContainerの中にaタグを3つ記述し、「属性：href 属性値：#」を記述
+        　　各aタグの中に articleタグ を記述
+        ５）各articleタグの中に spanタグ imgタグ pタグ を記述し、
+        　　spanタグに「属性：class 属性値：dateTime 値：2023/XX/XX」、
+        　　imgタグに「属性：src 属性値：添付ファイルの相対パス」と
+        　「属性：alt 属性値：※1参照」、
+        　　pタグに「属性：class 属性値：title 値：※1参照」を記述
+        　　※1 imgタグのaltとpタグの値にはそれぞれ、
+        ６）「コロナウイルス感染対策について」「店内リニューアル」「新メニュー登場！」を記述
+        ７） class more の中に aタグ を記述し、「属性：href 属性値：# 値：view more」を記述
+    -->
+
+
+    <!-- -- -- -- -- -- --【Gallery/Profile】-- -- -- -- -- -- -->
+    <!--
+        １）class twoColumnの中に mainタグ asideタグ を記述し、
+        　　mainタグに「属性：class 属性値：gallery」、
+        　　asideタグに「属性：class 属性値：about」を記述
+        ２）class galleryの中に h2タグ 1つ divタグ 2つ を記述し、
+        ３）h2タグの値に「Gallery」、
+        　　上のdivタグに「属性：class 属性値：grid」、
+        　　下のdivタグに「属性：class 属性値：more」を記述 
+        ４）class gridの中に imgタグ を4つ記述し、
+        　　それぞれ「属性：src 属性値：添付ファイルの相対パス」、
+        　　属性：alt 属性値：※2参照」を記述
+        　　※2 imgタグのaltにはそれぞれ、
+        　 「Gallery1」「Gallery2」「Gallery3」「Gallery4」を記述 
+        ５）class more の中に aタグ を記述し、「属性：href 属性値：# 値：view more」を記述 
+        ６）class about の中に h2タグ 1つ divタグ 2つ を記述し、
+        　　h2タグの値に「Profile」、
+        　　2つのdivタグ両方に「属性：class 属性値：prof」を記述 
+        ７）上の class prof の中に divタグ pタグ を記述し、
+        　　divタグに「属性：class 属性値：circle」、
+        　　pタグの値に※3を記述
+        　　※3 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        ８）class circle の中に imgタグ を追加し、「属性：src 属性値：添付ファイルの相対パス」と
+        　　属性：alt 属性値：prof1」を記述 
+        ９）下の class prof の中に imgタグ 1つ pタグ 2つ を記述し、
+        　　imgタグに「属性：src 属性値：添付ファイルの相対パス」と
+        　　属性：alt 属性値：prof2」、
+        　　上のpタグに「属性：class 属性値：shop 値：address:XXXXXXXXXXXXXXXXXX」、
+        　　下のpタグに「属性：class 属性値：shop 値：tel:XXX-XXXX-XXX」と記述
+    -->
+    <!-- -- -- -- -- -- -- ここに [News/Gallrey/Profile] 記載 -- -- -- -- -- -- -->
+    <div class="wrapper">
+        <section class="news">
+            <h2>News</h2>
+            <div class="newsContainer">
+                <a href="#">
+                    <article>
+                        <span class="dateTime">2023/XX/XX</span>
+                        <img src="./images/news1.jpg" alt="コロナウイルス感染対策について">
+                        <p class="title">コロナウイルス感染対策について</p>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <span class="dateTime">2023/XX/XX</span>
+                        <img src="./images/news2.jpg" alt="店内リニューアル">
+                        <p class="title">店内リニューアル</p>
+                    </article>
+                </a>
+                <a href="#">
+                    <article>
+                        <span class="dateTime">2023/XX/XX</span>
+                        <img src="./images/news3.jpg" alt="新メニュー登場！">
+                        <p class="title">新メニュー登場！</p>
+                    </article>
+                </a>
+            </div>
+            <div class="more">
+                <a href="#">view more</a>
+            </div>
+
+        </section>
+
+
+        <div class="twoColumn">
+            <main class="gallery">
+                <h2>Gallery</h2>
+                <div class="grid">
+                    <img src="./images/main1.jpg" alt="Gallery1">
+                    <img src="./images/main2.jpg" alt="Gallery2">
+                    <img src="./images/main3.jpg" alt="Gallery3">
+                    <img src="./images/main4.jpg" alt="Gallery4">
+                </div>
+                <div class="more">
+                    <a href="#">View More</a>
+                </div>
+            </main>
+            <aside class="about">
+                <h2>Profile</h2>
+                <div class="prof">
+                    <div class="circle">
+                        <img src="./images/human.png" alt="prof1">
+                    </div>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <img src="./images/shop.jpg" alt="prof2">
+                    <p class="shop">address:XXXXXXXXXXXXXXXXXX</p>
+                    <p class="shop">tel:XXX-XXXX-XXX</p>
+                </div>
+            </aside>
+        </div>
+        <!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
+        <!-- -- -- -- -- -- --【Contactボタン】-- -- -- -- -- -- -->
+        <!--
+        １）divタグを記述し、「属性：class 属性値：contact」を記述
+        ２）class contact の中に buttonタグ を追加し、値に「Make contact with us!」を記述
+    -->
+        <!-- -- -- -- -- -- -- ここに [Contactボタン] 記載 -- -- -- -- -- -- -->
+
+        <div class="contact">
+            <button>Make contact with us!</button>
+        </div>
+
+    </div>
+
+    <!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
+    <!-- -- -- -- -- -- --【フッタ】-- -- -- -- -- -- -->
+    <!--
+        １）footerタグ を記述
+        ２）footerタグ の中に divタグ 2つ 記述し、
+        　　上のdivタグに「属性：class 属性値：detail」、
+        　　下のdivタグに「属性：class 属性値：menu」を記述
+        ３）class detail の中に h1タグ 1つ pタグ 2つ を記述し、
+        　　h1タグの値に「Cafe」、
+        　　pタグ両方に「属性：class 属性値：shop」、
+        　　上のpタグの値に「address:XXXXXXXXXXXXXXXXXXXXXXXXXXX」、
+        　　下のpタグの値に「tel:XXX-XXXX-XXX」を記述
+        ４）class menu の中に navタグ を記述
+        ５）navタグ の中に ulタグを記述
+        ６）ulタグ の中に liタグ を4つ記述
+        ７）各liタグ の中に aタグ を記述し、「属性：href 属性値：#」を記述
+        ８）各aタグ の値に「News」「Gallery」「Profile」「Contact」を記述
+    -->
+    <!-- -- -- -- -- -- -- ここに [フッタ] 記載 -- -- -- -- -- -- -->
+
+    <footer>
+        <div class="detail">
+            <h1>Cafe</h1>
+            <p class="shop">address:XXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <p>tel:XXX-XXXX-XXX</p>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
+    <!-- 下記に [jsファイルを読み込む処理] を記述 -->
+
+    <script src="tutorial.js"></script>
+
+    <!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
+</body>
+
+</html>

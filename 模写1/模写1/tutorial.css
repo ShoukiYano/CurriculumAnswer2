@@ -1,0 +1,452 @@
+﻿@charset "utf-8";
+
+/* ===common=== */
+/* 全てのaタグに対して、装飾をなくす */
+a {
+    text-decoration: none;
+}
+
+/* 全てのliタグに対して、装飾をなくす */
+li {
+    list-style: none;
+}
+
+/* 全てのh2タグに対して、
+    ①文字の大きさを2remに設定する
+    ②外側の余白を下に14px設定する
+*/
+h2 {
+    /* ① */
+    font-size: 2rem;
+    /* ② */
+    margin-bottom: 14px;
+}
+
+/* 全てのspanタグに対して、テキストを左寄せにする */
+span {
+    text-align: left;
+}
+
+/* 全てのpタグに対して、必要に応じて単語の途中で折り返すよう */
+p {
+    word-wrap: break-word;
+}
+
+/* wrapperクラスに対して、内側の余白を左右4%に設定する */
+.wrapper {
+    padding: 0 4%;
+}
+
+/* moreクラスに対して、
+    ①幅100%に設定する
+    ②テキストを右寄せ に設定する
+*/
+.more {
+    /* ① */
+    width: 100%;
+    /* ② */
+    text-align: right;
+}
+
+/* moreクラスのaタグに対して、
+    ①文字色を黒に設定する
+    ②文字の大きさを1.25remに設定する
+*/
+.more a {
+    /* ① */
+    color: black;
+    /* ② */
+    font-size: 1.25rem;
+}
+
+
+/* ===header=== */
+/* headerタグに対して、
+    ①内側の余白を上下に12px, 左右に4%
+    ②横幅を100%
+    ③背景色をrgb(85, 85, 85)
+    ④子要素を横並びにする
+    ⑤フレックスコンテナのメイン軸の幅に対して余白をもって等間隔に配置する(左右は余白なし)
+    ⑥フレックコンテナのクロス軸に合わせて中央に配置にする
+*/
+header {
+    /* ① */
+    padding: 12px 4%;
+    /* ② */
+    width: auto;
+    /* ③ */
+    background-color: rgb(85, 85, 85);
+    /* ④ */
+    display: flex;
+    /* ⑤ */
+    justify-content: space-between;
+    /* ⑥ */
+    align-items: center;
+}
+
+/* headerタグの中の aタグ h1タグ に対して文字色を白に設定する */
+header a,
+header h1 {
+    color: white;
+}
+
+/* headerMenuクラスに対して子要素を横並びにする */
+.headerMenu {
+    display: flex;
+}
+
+/* headerMenuクラスのliタグに対して外側の余白を左に24px設定する */
+.headerMenu li {
+    margin-left: 24px;
+}
+
+
+/* ===news=== */
+/* newsクラスに外側の余白を上下に84px設定する */
+.news {
+    margin: 84px 0;
+}
+
+/* newsContainerクラスに対して、
+    ①子要素を横並びにする
+    ②フレックスコンテナのメイン軸の幅に対して余白をもって等間隔に配置する(左右は余白なし)
+    ③横幅を100%に設定する
+*/
+.newsContainer {
+    /* ① */
+    display: flex;
+    /* ② */
+    justify-content: space-between;
+    /* ③ */
+    width: 100%;
+}
+
+/* newsContainerクラスの中のaタグに対して、横幅を29vwに設定する */
+.newsContainer a {
+    width: 29vw;
+}
+
+/* articleタグに対して、文字色を黒に設定する */
+article {
+    color: black;
+}
+
+/* articleタグの中のimgタグに対して、
+    ①横幅を100%に設定する
+    ②縦幅を20vwに設定する
+    ③画像を中央でトリミングする
+*/
+article img {
+    /* ① */
+    width: 100%;
+    /* ② */
+    height: 20vw;
+    /* ③ */
+    object-fit: cover;
+}
+
+/* titleクラスに対して、テキストを中央寄せにする */
+.title {
+    text-align: center;
+}
+
+
+/* ===main=== */
+/* twoColumnクラスに対して、
+    ①子要素を横並びにする
+    ②横幅を100%
+    ③フレックスコンテナのメイン軸の幅に対して余白をもって等間隔に配置する(左右は余白なし)
+    ④外側の余白を下に84pxに設定する
+*/
+.twoColumn {
+    /* ① */
+    display: flex;
+    /* ② */
+    width: 100%;
+    /* ③ */
+    justify-content: space-between;
+    /* ④ */
+    margin-bottom: 84px;
+}
+
+/* mainタグに対して、横幅73%に設定する */
+main {
+    width: 73%;
+}
+
+/* mainタグの divタグ imgタグ に対して、
+    ①横幅を100%に設定する
+    ②縦幅をautoに設定する
+    ③画像を中央でトリミングする
+*/
+main div img {
+    /* ① */
+    width: 100%;
+    /* ② */
+    height: auto;
+    /* ③ */
+    object-fit: cover;
+}
+
+/* gridクラスに対して、
+    ①displayをgridで指定
+    ②子要素間の余白を列と行ともに14pxに設定する
+    ③列トラックの幅を1frで2つずつ表示されるように設定する
+*/
+.grid {
+    /* ① */
+    display: grid;
+    /* ② */
+    gap: 14px;
+    /* ③ */
+    grid-template-columns: 1fr 1fr;
+}
+
+/* asideタグに対して、横幅を24%に設定する */
+aside {
+    width: 24%;
+}
+
+/* circleクラスに対して、
+    ①横幅を50%に設定する
+    ②要素を中央寄せに設定する
+*/
+.circle {
+    /* ① */
+    width: 50%;
+    /* ② */
+    margin: 0 auto;
+}
+
+/* circleクラスのimgタグに対して、
+    ①要素の四隅の角を丸さを50%に設定する
+    ②要素のボックスからはみ出た部分を非表示にする
+*/
+.circle img {
+    /* ① */
+    border-radius: 50%;
+    /* ② */
+    overflow: hidden;
+}
+
+/* profクラスに対して、外側の余白を下に96pxに設定する */
+.prof {
+    margin-bottom: 96px;
+}
+
+/* profクラスの中のimgタグに対して、
+    ①横幅を100%に設定する
+    ②外側の余白を 下に24px 左右をauto に設定する
+*/
+.prof img {
+    /* ① */
+    width: 100%;
+    /* ② */
+    margin: 24px auto 0;
+}
+
+
+/* ===contact=== */
+/* contactクラスに対して、
+    ①横幅を50%に設定する
+    ②縦幅をautoに設定する
+    ③内側の余白を上下左右に24px
+    ④外側の余白を 下に114px 左右をauto に設定する
+    ⑤背景色をrgb(240, 224, 0)に設定する
+    ⑥テキストを中央に設定する
+    ⑦文字サイズを2remに設定する
+    ⑧文字色を黒に設定する
+    ⑨要素の四隅の角を丸さを15pxに設定する
+    ⑩ボタンの外側の影を 下に8px 右に8px に設定する
+*/
+.contact {
+    /* ① */
+    width: 50%;
+    /* ② */
+    height: auto;
+    /* ③ */
+    padding: 24px;
+    /* ④ */
+    margin: 0 auto 114px;
+    /* ⑤ */
+    background-color: rgb(240, 224, 0);
+    /* ⑥ */
+    text-align: center;
+    /* ⑦ */
+    font-size: 2rem;
+    /* ⑧ */
+    color: black;
+    /* ⑨ */
+    border-radius: 15px;
+    /* ⑩ */
+    box-shadow: 8px 8px;
+}
+
+/* ===footer=== */
+/* footerタグに対して、
+    ①内側の余白を 上下48px 左右4% に設定する
+    ②横幅を100%に設定する
+    ③背景色をrgb(85, 85, 85)に設定する
+    ④子要素を横並びにする
+    ⑤フレックスコンテナのメイン軸の幅に対して余白をもって等間隔に配置する(左右は余白なし)
+    ⑥フレックコンテナのクロス軸に合わせて中央に配置にする
+    ⑦文字色を白に設定する
+*/
+footer {
+    /* ① */
+    padding: 48px 4%;
+    /* ② */
+    width: auto;
+    /* ③ */
+    background-color: rgb(85, 85, 85);
+    /* ④ */
+    display: flex;
+    /* ⑤ */
+    justify-content: space-between;
+    /* ⑥ */
+    align-items: center;
+    /* ⑦ */
+    color: white;
+}
+
+/* menuクラスに対して、横幅を25%に設定する */
+.menu {
+    width: 25%;
+}
+
+/* menuクラスのliタグに対して、
+    ①外側の余白を 上下に24px 左右に48px に設定する
+    ②内側の余白を下に4px設定する
+    ③下の枠線を 太さ1px 黒色 種類をsolid に設定する
+*/
+.menu li {
+    /* ① */
+    margin: 24px 48px;
+    /* ② */
+    padding-bottom: 4px;
+    /* ③ */
+    border-bottom: 1px solid black;
+}
+
+/* menuクラスの liタグ aタグ に対して文字色を白に設定する */
+.menu li a {
+    color: white;
+}
+
+
+/* === === === 以下はメディアクエリで860px以下の処理を記述 === === === */
+@media (max-width: 860px) {
+
+    /* newsContainerクラスに対して、
+    ①メイン軸を上から下に設定する
+*/
+    .newsContainer {
+        /* ① */
+        flex-direction: column;
+    }
+
+    /* newsContainerクラスのaタグに対して、横幅を100%に設定する */
+    .newsContainer a {
+        width: 100%;
+    }
+
+    /* twoColumnクラスに対して、
+    ①displayをflexに設定する
+    ②メイン軸を上から下に設定する
+*/
+    .twoColumn {
+        /* ① */
+        display: flex;
+        /* ② */
+        flex-direction: column;
+    }
+
+    /* galleryクラスに対して、横幅を100%に設定する */
+    .gallery {
+        width: 100%;
+    }
+
+    /* articleタグに対して外側の余白を下に30px設定する */
+    article {
+        margin-bottom: 30px;
+    }
+
+    /* articleタグのimgタグに対して縦幅を50vhで設定する */
+    article img {
+        height: 50vh;
+    }
+
+    /* gridクラスに対して、
+    ①displayをgridに設定する
+    ②列トラックの幅を1frで1つずつ表示されるように設定する
+*/
+    .grid {
+        /* ① */
+        display: grid;
+        /* ② */
+        grid-template-columns: 1fr;
+    }
+
+    /* aboutクラスに対して、
+    ①横幅を100%に設定する
+    ②外側の余白を上に84px設定する
+*/
+    .about {
+        /* ① */
+        width: 100%;
+        /* ② */
+        margin-top: 84px;
+    }
+
+    /* shopクラスに対して、テキストを中央配置に設定する */
+    .shop {
+        text-align: center;
+    }
+
+    /* contactクラスに対して、横幅を70%に設定する */
+    .contact {
+        width: 70%;
+    }
+
+    /* footerタグに対して、
+    ①displayをflexに設定する
+    ②列トラックの幅を1frで1つずつ表示されるように設定する
+*/
+    footer {
+        /* ① */
+        display: flex;
+
+        /* ②*/
+        flex-direction: column
+    }
+
+    /* menuクラスに対して、横幅を100%に設定する */
+    .menu {
+        width: 100%;
+    }
+
+    /* menuクラスの中のulタグに対して、
+    ①横幅を100%に設定する
+    ②子要素を横並びにする
+    ③フレックスコンテナのメイン軸の幅に対して余白をもって等間隔に配置する(左右は余白なし)
+*/
+    .menu ul {
+        /* ① */
+        width: 100%;
+        /* ② */
+        display: flex;
+        /* ③ */
+        justify-content: space-between;
+    }
+
+    /* menuクラスの中のliタグに対して、
+    ①外側の余白を上下左右4%に設定
+    ②下の枠線を消す
+*/
+    .menu li {
+        /* ① */
+        margin: 4%;
+        /* ② */
+        border-bottom: none;
+    }
+}
