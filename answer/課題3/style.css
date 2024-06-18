@@ -1,0 +1,31 @@
+/* 'important-text' クラスに適用されるスタイル */
+.important-text {
+    color: navy;
+    font-size: 24px;
+}
+
+/* 'first-paragraph' IDに適用されるスタイル */
+#first-paragraph {
+    color: maroon;
+    font-weight: bold;
+}
+
+/* 'secondary-text' クラスに適用されるスタイル */
+.secondary-text {
+    color: grey;
+}
+
+/* 'action-button' クラスに適用されるボタンスタイル */
+.action-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 'action-button' ホバー時のスタイル */
+.action-button:hover {
+    background-color: darkblue;
+}

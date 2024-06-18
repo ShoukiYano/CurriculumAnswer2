@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav#navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav#navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav#navbar ul li {
+    margin: 0 20px;
+}
+
+nav#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#products, #about, #contact {
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 600px) {
+    nav#navbar ul {
+        flex-direction: column;
+    }
+}

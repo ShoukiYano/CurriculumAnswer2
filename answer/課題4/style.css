@@ -1,0 +1,16 @@
+/* フレックスコンテナのスタイリング */
+.flex-container {
+    display: flex; /* フレックスボックスを有効化 */
+    justify-content: space-around; /* アイテム間の余白を均等に配置 */
+    align-items: center; /* アイテムを垂直方向で中央揃え */
+    border: 1px solid black; /* コンテナの境界を可視化 */
+    padding: 20px;
+}
+
+/* フレックスアイテムのスタイリング */
+.flex-item {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid navy; /* アイテムの境界を可視化 */
+}

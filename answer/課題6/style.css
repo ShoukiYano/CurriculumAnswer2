@@ -1,0 +1,20 @@
+/* 基本スタイル */
+.container {
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* メディアクエリ：画面幅が600px以下の場合 */
+@media screen and (max-width: 600px) {
+    .container {
+        background-color: lightcoral;
+    }
+}
+
+/* メディアクエリ：画面幅が601px以上の場合 */
+@media (min-width: 601px) {
+    .container {
+        background-color: lightgreen;
+    }
+}

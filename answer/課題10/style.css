@@ -1,0 +1,10 @@
+.container {
+    margin: 20px;
+}
+.task {
+    margin-bottom: 20px;
+}
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+}

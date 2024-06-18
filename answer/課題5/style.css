@@ -1,0 +1,16 @@
+/* グリッドコンテナのスタイリング */
+.grid-container {
+    display: grid; /* グリッドレイアウトを有効化 */
+    grid-template-columns: 1fr 1fr 1fr; /* 3列の均等な幅を設定 */
+    grid-gap: 10px; /* グリッドアイテム間のギャップ */
+    padding: 10px;
+}
+
+/* グリッドアイテムのスタイリング */
+.grid-item {
+    background-color: lightcoral;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid darkred; /* アイテムの境界を可視化 */
+}

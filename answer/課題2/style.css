@@ -1,0 +1,25 @@
+/* すべてのbody要素に適用される基本スタイル */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* h1タグに適用されるスタイル */
+h1 {
+    color: blue;
+}
+
+/* pタグに適用されるスタイル */
+p {
+    color: green;
+}
+
+/* ulタグに適用されるスタイル */
+ul {
+    color: red;
+}
+
+/* 各li要素に適用されるスタイル */
+li {
+    margin-bottom: 10px;
+}

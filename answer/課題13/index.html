@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>問題13: クイズアプリケーション</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div class="question">
+            <p>日本の首都はどこですか？</p>
+            <select id="question1">
+                <option value="東京">東京</option>
+                <option value="大阪">大阪</option>
+                <option value="京都">京都</option>
+            </select>
+        </div>
+        <div class="question">
+            <p>世界で最も高い山はどれですか？</p>
+            <select id="question2">
+                <option value="エベレスト">エベレスト</option>
+                <option value="富士山">富士山</option>
+                <option value="K2">K2</option>
+            </select>
+        </div>
+        <div class="question">
+            <p>次のうち、哺乳類に分類されるのはどれですか？</p>
+            <select id="question3">
+                <option value="カエル">カエル</option>
+                <option value="イヌ">イヌ</option>
+                <option value="トカゲ">トカゲ</option>
+            </select>
+        </div>
+        <button id="submit-answers">回答を確認</button>
+        <p id="result"></p>
+    </div>
+
+    <!-- JavaScriptファイルのリンク -->
+    <script src="script.js"></script>
+</body>
+</html>

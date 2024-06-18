@@ -1,0 +1,13 @@
+#rating-container {
+    text-align: center;
+    font-size: 2em;
+}
+
+.star {
+    cursor: pointer;
+    color: gray;
+}
+
+.star:hover {
+    color: gold;
+}
